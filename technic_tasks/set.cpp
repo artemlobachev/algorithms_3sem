@@ -124,7 +124,7 @@ void set_print(struct set const *s)
 
     if (set_empty(s))
     {
-        puts("[]");
+        printf("[]\n");
         return ;
     }
 
@@ -142,7 +142,7 @@ void set_print(struct set const *s)
             printf("%lu, ", i);
         }
 }
-
+/*
 int main() {
     struct set *s = set_new(10000);
     set_insert(s, 1);
@@ -157,4 +157,4 @@ int main() {
 
     set_print(s);
     assert(set_delete(s) == NULL);
-}
+}*/
